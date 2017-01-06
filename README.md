@@ -16,6 +16,8 @@ RSpec tests for your servers configured  by Chef, Puppet, Ansible, Itamae or any
     
     "host_name" -> "IP of remote host"
     
+- Add test cases in sample_spec.rb 
+
 - execute following command
 
   $ bundle exec rake spec
