@@ -19,3 +19,17 @@ RSpec tests for your servers configured  by Chef, Puppet, Ansible, Itamae or any
 - execute following command
 
   $ bundle exec rake spec
+
+# References
+
+https://debian-administration.org/article/703/A_brief_introduction_to_server-testing_with_serverspec
+
+http://serverspec.org/resource_types.html
+
+http://annaken.github.io/automated-testing-serverspec-output-logstash-results-kibana
+
+https://vincent.bernat.im/en/blog/2014-serverspec-test-infrastructure.html
+
+https://github.com/vincentbernat/serverspec-example
+
+https://github.com/stelligent/serverspec-aws-resources
