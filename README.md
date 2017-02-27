@@ -10,11 +10,12 @@ RSpec tests for your servers configured  by Chef, Puppet, Ansible, Itamae or any
 - Change sudo_password, user, host_name (IP) and password in spec_helper.rb
 - Change following contents from spec_helper.rb
 
-    "user" -> "user of remote host"
+    "user" -> "set SPEC_USER variable in environment"
+    set "SPEC_HOST_AUTHENTICATION" as "key" or "password" in environment variable
     
-    "password" -> "password of remote host" 
+    "password" -> "set SPEC_PASSWORD variable in environment" 
     
-    "host_name" -> "IP of remote host"
+    "host_name" -> "SPEC_HOST_NAME variable in environment"
     
 - Add test cases in sample_spec.rb 
 
