@@ -14,17 +14,13 @@ else
   set :sudo_password, ENV['SPEC_PASSWORD']
 end
 
-
-#host = ENV['TARGET_HOST']
-#host = "104.131.191.140"
-
 options = Net::SSH::Config.for(host)
 options[:user] = ENV['SPEC_USER']
 options[:host_name] = ENV['SPEC_HOST_NAME']
 
 if ENV['SPEC_HOST_AUTHENTICATION']== "key"
   key = []
-  key << File.read("key/#{ENV['SPEC_USER']}_#{ENV['SPEC_IP']}.key")
+  key << File.read("key/#{ENV['SPEC_USER']}_#{ENV['SPEC_HOST_NAME']}.key")
   options[:keys_only] = TRUE
   options[:key_data] = key
 elsif ENV['SPEC_HOST_AUTHENTICATION'] == "password"
