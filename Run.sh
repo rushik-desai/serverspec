@@ -1,10 +1,6 @@
 #!/bin/sh
 
 echo "Running Actual serverspec automation code using run.sh"
-export ROLE=${role}
-TITLE1=$(echo "${ROLE}" | sed "s/_/${replace}/")
-TITLE2=$(echo "${TITLE1^^} REPORT" )
-export TITLE=$TITLE2
 
 if [ "${SPEC_HOST_AUTHENTICATION}" = "key" ]
 then
