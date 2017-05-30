@@ -21,7 +21,7 @@ RSpec tests for your servers configured  by Chef, Puppet, Ansible, Itamae or any
 
 - execute following command
 
-  $ bundle exec rake spec
+  $ bash Run.sh
 
 # References
 
