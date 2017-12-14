@@ -22,7 +22,7 @@ namespace :spec do
     RSpec::Core::RakeTask.new(target.to_sym) do |t|
       ENV['TARGET_HOST'] = original_target
       t.pattern = "spec/#{original_target}/*_spec.rb"
-      t.rspec_opts = ["--format", "html","--out", "reports/#{ENV['SPEC_HOST_NAME']}_#{original_target}.html", "--format", "json", "--out", "reports/#{ENV['SPEC_HOST_NAME']}_#{original_target}.json"]
+      t.rspec_opts = ["--format", "html","--out", "reports/test-report.html", "--format", "json", "--out", "reports/index.json"]
     end
   end
 end
